@@ -12,6 +12,7 @@ public class Service {
     @GET
     @Produces("text/plain")
     public String getData() {
-        return "Application version: " + version + " on " + System.getProperty("environment");
+        String environment = System.getenv("environment");
+        return "Application version: " + version + " on " + environment;
     }
 }
