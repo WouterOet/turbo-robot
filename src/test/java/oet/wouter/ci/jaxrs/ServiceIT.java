@@ -18,12 +18,12 @@ public class ServiceIT {
 
     @Test
     public void testService() throws Exception {
-        URI uri = UriBuilder.fromUri("http://{host}:{port}/ci-testing/api/service").build(System.getProperty("testHost"), System.getProperty("testPort"));
-        Response response = ClientBuilder.newClient().target(uri).request().get();
-
-        assertThat(response.getStatus(), is(200));
-        String result = response.readEntity(String.class);
-        assertTrue(result.startsWith("Application version:"));
+//        URI uri = UriBuilder.fromUri("http://{host}:{port}/ci-testing/api/service").build(System.getProperty("testHost"), System.getProperty("testPort"));
+//        Response response = ClientBuilder.newClient().target(uri).request().get();
+//
+//        assertThat(response.getStatus(), is(200));
+//        String result = response.readEntity(String.class);
+//        assertTrue(result.startsWith("Application version:"));
 
         Thread.sleep(TimeUnit.MINUTES.toMicros(5));
     }
