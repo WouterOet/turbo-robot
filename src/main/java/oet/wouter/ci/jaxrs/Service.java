@@ -7,7 +7,7 @@ import javax.ws.rs.Produces;
 @Path("service")
 public class Service {
 
-    private static final String version = "2.0";
+    private static final String version = "3.0";
 
     @GET
     @Produces("text/plain")
